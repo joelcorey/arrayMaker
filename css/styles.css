@@ -1,0 +1,65 @@
+body, html {
+	height: 100%;
+	margin: 0%;
+	padding: 0%;
+}
+
+.wrapper {
+	
+}
+
+.main_display {
+	
+}
+
+.flex {
+	display: flex;
+}
+
+section {
+	margin: 0% auto;
+	display: flex;
+}
+
+.topmenu {
+	background-color: #ff9966;
+	border: 1px black solid;
+}
+
+.gamearea {
+	position: absolute;
+	top:100px;
+}
+
+.column	{
+	margin: 10px;
+	flex: 1 1 0;
+}
+
+.settings {
+	position: absolute;
+	bottom: 0;
+	background-color: #A3BAC2;
+	border: 0px;
+}
+
+.gridy {
+	display: flex;
+}
+
+.gridx {
+	padding: 5px;
+	border: 1px black solid;
+}
+
+.array_content_container {
+	display: flex;
+	margin: 0px;
+	padding: 0px;
+}
+
+.array_content {
+	margin: 4px;
+	padding: 0px;
+	border: 1px black solid;
+}
