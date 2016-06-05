@@ -1,7 +1,7 @@
 #arrayMaker
 
-I was having trouble with multi-dimensional arrays in Javascript. So I made this and had some fun with it.
+arrayMaker is a project I started to better understand multi-dimensional arrays in Javascript. The end goal here is to have a web application that allows for real time editing of an array. For now it will remain as a sort of semi-functional experiment.
 
-It creates a dynamic array that is then incorporated in to jQuery UI.
+It makes use of jQuery and jQueryUI.
 
-Feel free to use it!
+If you find it useful then feel free to use it!

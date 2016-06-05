@@ -6,11 +6,11 @@ function startup() {
 	
 	var gameXsize = gridXsize * tileSize;
 	var gameYsize = gridYsize * tileSize;
-	console.log("Game display area: " + gameXsize + ", " + gameYsize);
+	//console.log("Game display area: " + gameXsize + ", " + gameYsize);
 
 	//var tileArray = [];
 	var tileArray = make2Darray(gridXsize, gridYsize);
-	transfer2Darray (tileArray);
+	transferAccordion (tileArray);
 	
 	$(function() {
 		$( "#accordion" )
@@ -42,11 +42,11 @@ function startup() {
 			}
 			count = 0;
 		}
-		console.log(makeArray);
+		//console.log(makeArray);
 		return makeArray;
 	} 
 
-	function transfer2Darray (arraysource) {
+	function transferAccordion (arraysource) {
 		var cssheader = 1;
 		var cssdiv = 2
 		for (var y = 0; y < arraysource.length; y++) {
@@ -62,13 +62,20 @@ function startup() {
 			
 			for (var x = 0; x < arraysource[y].length; x++) { 
 				$('#content' + y).append('<div class="array_content">' +
-					'Content ' + x + 
+					'Content ' + arraysource[y][x] + //Could also just use x from the nested for loop here.
 					'</div>'
 				);
 			}
 		cssheader++;
 		cssdiv++;
 		}
+	}
+
+	function getHoverState(selector) {
+		if (thingy = $(selector).is(":hover")) {
+			
+		}
+		return true;
 	}
 
 	// At this point we can start working on manipulating the array.
@@ -83,5 +90,17 @@ function startup() {
 	})
 	.mouseout(function() {
 		$(this).css("background-color","white");
+	});
+
+	$.contextMenu({
+		selector: '.main_display',
+		items: {
+			select: {
+				name: "Select",
+				callback: function(key, opt){
+					alert("Clicked on " + key);
+				}
+			}
+		}
 	});
 }
