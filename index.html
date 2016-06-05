@@ -9,6 +9,8 @@
 		<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
 		<link rel="stylesheet" type="text/css" href="css/jquery.contextMenu.css">
 
+		<link rel="icon" href="favicon.ico" sizes="16x16" type="">
+
 		<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
 		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="js/jquery.contextMenu.js"></script>
@@ -22,18 +24,33 @@
 
 			<div class="main_display">
 
-				<section class="topmenu"> <!-- The start of a header nav panel, useless for now -->
-					<!-- Does a modern UI really need a top menu?
-					For now this will remain commented out
-					<div class="column">One</div>
-					<div class="column">Two</div>
-					<div class="column">Three</div>
-					-->
-				</section>
-
 				<section class="gamearea">	
 
-					<div id="accordion"></div>								
+					<ul id="topmenu">
+						<li><span class="ui-icon ui-icon-disk"></span>Open</li>
+						<li><span class="ui-icon ui-icon-zoomin"></span>Save</li>
+						<li><span class="ui-icon ui-icon-zoomin"></span>Options</li>
+						<li>
+						Display
+							<ul>
+						    	<li><span class="ui-icon ui-icon-seek-start"></span>Accordion</li>
+						    	<li><span class="ui-icon ui-icon-stop"></span>Grid</li>
+					    	</ul>
+						</li>
+						<li>
+					    Array
+					    	<ul>
+						    	<li><span class="ui-icon ui-icon-seek-start"></span>Add</li>
+						    	<li><span class="ui-icon ui-icon-stop"></span>Delete</li>
+						    	<li><span class="ui-icon ui-icon-play"></span>Rename</li>
+						    	<li><span class="ui-icon ui-icon-seek-end"></span>Next</li>
+						    	<li><span class="ui-icon ui-icon-seek-end"></span>Previous</li>
+					    	</ul>
+						</li>
+						<li>About</li>
+					</ul>
+
+					<div id="accordion"></div>					
 						
 				</section>				
 

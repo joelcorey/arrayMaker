@@ -71,7 +71,11 @@ function startup() {
 		}
 	}
 
-	function getHoverState(selector) {
+	function transferSelectable (arraysource) {
+
+	}
+
+	function hoverState(selector) {
 		if (thingy = $(selector).is(":hover")) {
 			
 		}
@@ -103,4 +107,7 @@ function startup() {
 			}
 		}
 	});
+
+	// Make the main menu
+	$( "#topmenu" ).menu();
 }
